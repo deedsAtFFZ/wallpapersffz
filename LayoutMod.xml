@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LayoutModificationTemplate
+    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+    xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+    Version="1">
+
+  <!-- Custom Taskbar Layout -->
+  <CustomTaskbarLayoutCollection PinListPlacement="Replace">
+
+    <defaultlayout:TaskbarLayout>
+      <taskbar:TaskbarPinList>
+
+        <!-- Datei-Explorer -->
+        <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer" />
+
+        <!-- Microsoft Edge -->
+        <taskbar:DesktopApp DesktopApplicationID="MSEdge" />
+
+        <!-- Microsoft Store -->
+        <taskbar:UWA AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" />
+
+        <!-- Outlook (neue App) -->
+        <taskbar:UWA AppUserModelID="Microsoft.OutlookForWindows_8wekyb3d8bbwe!Microsoft.OutlookforWindows" />
+
+        <!-- PowerPoint -->
+        <taskbar:DesktopApp DesktopApplicationID="Microsoft.Office.POWERPNT.EXE.15" />
+
+        <!-- Excel -->
+        <taskbar:DesktopApp DesktopApplicationID="Microsoft.Office.EXCEL.EXE.15" />
+
+        <!-- Word -->
+        <taskbar:DesktopApp DesktopApplicationID="Microsoft.Office.WINWORD.EXE.15" />
+
+      </taskbar:TaskbarPinList>
+    </defaultlayout:TaskbarLayout>
+
+  </CustomTaskbarLayoutCollection>
+</LayoutModificationTemplate>
